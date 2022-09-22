@@ -1,25 +1,9 @@
+import { Header } from "./components/Header"
+
 export function App() {
   return (
     <>
-      <header>
-        <img src="" alt="logo" />
-        <nav>
-          <ul>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Projects</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <main>
         <div className="hero">
           <h1>We are creatives</h1>

@@ -1,0 +1,102 @@
+.header{
+  --header-width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-width);
+  position: relative;
+}
+
+.header__nav{
+  display: none;
+
+  &[data-visible="true"]{
+    display: block;
+  }
+  
+  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+
+    li{
+      a{
+        color: var(--clr-neutral-gray-100);
+      }
+    }
+
+    li[data-type="button"]{
+      a{
+        background-color: var(--clr-neutral-gray-100);
+        border-radius: 100vw;
+        padding: 0.75rem 1.5rem;
+        font-family: var(--ff-secondary);
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        cursor: pointer;
+        color: var(--clr-neutral-gray-500);
+      }
+    }
+
+    @media (max-width: 45em){
+      --box-shadow: 0.15rem 0.15rem 1rem rgba(black, 0.1);
+      position: absolute;
+      inset: 0;
+      height: fit-content;
+
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      padding-block: 3rem;
+      margin-top: calc(var(--header-width) + 2rem);
+      background-color: var(--clr-neutral-gray-100);
+      
+      border-radius: 0.25rem;
+      border-top-right-radius: 0;
+      box-shadow: 0.15rem 0.15rem 1rem rgba(black, 0.1);
+      
+      &::before{
+        --border-color: var(--clr-neutral-gray-100);
+        content: '';
+        width: 1rem;
+        position: absolute;
+        height: 1rem;
+        top: -2rem;
+        right: 0;
+     
+        border: 1rem solid transparent;
+       
+        border-bottom-color: var(--border-color);
+        border-right-color: var(--border-color);
+        box-shadow: var(--box-shadow);
+      }
+
+      li{
+        a{
+          color: var(--clr-neutral-gray-300);
+        }
+      }
+
+      li[data-type="button"]{
+        a{
+          background-color: var(--clr-primary-yellow-400);
+        }
+      }
+    }
+  }
+}
+
+.header__button{
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: 45em){
+    display: none;
+  }
+}
