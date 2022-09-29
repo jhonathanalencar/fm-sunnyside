@@ -1,13 +1,12 @@
 import { Header } from "./components/Header"
+import { Hero } from "./components/Hero"
 
 export function App() {
   return (
     <>
       <Header />
       <main>
-        <div className="hero">
-          <h1>We are creatives</h1>
-        </div>
+        <Hero />
         <div className="about">
           <section>
             <div>

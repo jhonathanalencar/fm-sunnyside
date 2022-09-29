@@ -8,7 +8,7 @@ export function Header(){
 
   return(
     <div className="container">
-      <header className={styles.header}>
+      <header className={`container ${styles.header}`}>
         <img src={images.logo} alt="Sunnyside" />
         <nav 
           id="primary-navigation"

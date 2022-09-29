@@ -1,0 +1,42 @@
+.heroContainer{
+  background-image: url('/src/assets/mobile/image-header.jpg');
+  // padding-top: calc(var(--header-height) * 2);
+  width: 100%;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-block: 8rem;
+  }
+
+  @media (min-width: 45em){
+    background-image: url('/src/assets/desktop/image-header.jpg');
+    
+    > div{
+      padding-top: 10rem;
+      padding-bottom: 18rem;
+      gap: 5rem;
+    }
+  }
+}
+
+.heading{
+  font-size: 2rem;
+  font-family: var(--ff-secondary);
+  text-align: center;
+  font-weight: 900;
+  max-width: 12ch;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: var(--clr-neutral-gray-100);
+
+  @media (min-width: 45em) {
+    font-size: 3rem;
+    max-width: fit-content;
+  }
+}
