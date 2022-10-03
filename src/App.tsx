@@ -1,5 +1,6 @@
 import { Header } from "./components/Header"
-import { Hero } from "./components/Hero"
+import { About } from "./containers/About"
+import { Hero } from "./containers/Hero"
 
 export function App() {
   return (
@@ -7,36 +8,7 @@ export function App() {
       <Header />
       <main>
         <Hero />
-        <div className="about">
-          <section>
-            <div>
-              <h2>Transform your brand</h2>
-              <p>
-                We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
-              </p>
-              <a href="#">
-                <strong>Learn more</strong>
-              </a>
-            </div>
-            <div>
-              <img src="" alt="image" />
-            </div>
-          </section>
-          <section>
-            <div>
-              <img src="" alt="image" />
-            </div>
-            <div>
-              <h2>Stand out to the right audience</h2>
-              <p>
-                Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
-              </p>
-              <a href="#">
-                <strong>Learn more</strong>
-              </a>
-            </div>
-          </section>
-        </div>
+        <About />
         <div className="services">
           <div>
             <h3>Graphic Design</h3>

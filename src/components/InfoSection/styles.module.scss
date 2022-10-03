@@ -1,0 +1,118 @@
+.sectionContainer{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 45em){
+    grid-template-columns: 1fr 1fr;
+    // place-items: center;
+    gap: 0;
+  }
+}
+
+
+.section__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 4rem;
+
+  @media (min-width: 45em) {
+    align-items: center;
+    max-width: max-content;
+    justify-content: center;
+  }
+}
+
+.section__info_title{
+  font-family: var(--ff-secondary);
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--clr-neutral-gray-500);
+
+  @media (min-width: 45em){
+    font-size: 3rem;
+    text-align: left;
+
+    &[data-width="small"]{
+      max-width: 13ch;
+    }
+  
+    &[data-width="large"]{
+      max-width: 15.1ch;
+    }
+  }
+
+}
+
+.section__info_content{
+  text-align: center;
+  color: var(--clr-neutral-gray-300);
+  max-width: clamp(32ch, 35ch, 40ch);
+
+  @media (min-width: 45em) {
+    text-align: left;
+    max-width: 45ch;
+    align-self: flex-start;
+  }
+}
+
+.section__info_link{
+  font-family: var(--ff-secondary);
+  color: var(--clr-neutral-gray-500);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+  position: relative;
+
+  &:hover::before{
+    opacity: 1;
+  }
+
+  @media (min-width: 45em){
+    align-self: flex-start;
+  }
+}
+
+.section__info_link::before{
+  position: absolute;
+  content: '';
+  width: 115%;
+  bottom: -0.2rem;
+  left: -7.5%;
+  height: 0.5rem;
+  z-index: -1;
+  border-radius: 100vw;
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+
+.section__info_link[data-color="red"]::before{
+  background-color: var(--clr-primary-red-400);
+}
+
+.section__info_link[data-color="yellow"]::before{
+  background-color: var(--clr-primary-yellow-400);
+}
+
+.section__image{
+  width: 100%;
+  display: grid;
+  grid-row: 1 / 2;
+  flex: 1;
+  display: flex;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 45em){
+  .section__image[data-image-first="false"]{
+    grid-column: 2 / 3;
+  }
+}
