@@ -1,6 +1,6 @@
-import { Header } from "./components/Header"
-import { About } from "./containers/About"
-import { Hero } from "./containers/Hero"
+import { Header } from "./components";
+import { About, Hero, Services } from "./containers";
+
 
 export function App() {
   return (
@@ -9,20 +9,7 @@ export function App() {
       <main>
         <Hero />
         <About />
-        <div className="services">
-          <div>
-            <h3>Graphic Design</h3>
-            <p>
-              Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention.
-            </p>
-          </div>
-          <div>
-            <h3>Photography</h3>
-            <p>
-              Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-            </p>
-          </div>
-        </div>
+        <Services />
         <div className="testimonials">
           <strong>Client testimonials</strong>
           <article>

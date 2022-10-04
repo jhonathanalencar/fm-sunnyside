@@ -1,0 +1,61 @@
+.backgroundSectionContainer{
+  flex: 1;
+  padding-top: 24rem;
+  padding-bottom: 4rem;
+  background-size: cover;
+  background-position: center;
+
+  &[data-section="graphicDesign"]{
+    background-image: url('/src/assets/mobile/image-graphic-design.jpg');
+
+    .backgroundSection__heading{
+      color: var(--clr-primary-cyan-500);
+    }
+
+    .backgroundSection__content{
+      color: var(--clr-primary-cyan-500);
+    }
+  }
+
+  &[data-section="photography"]{
+    background-image: url('/src/assets/mobile/image-photography.jpg');
+    
+    .backgroundSection__heading {
+      color: var(--clr-primary-blue-400);
+    }
+  
+    .backgroundSection__content {
+      color: var(--clr-primary-blue-400);
+    }
+  }
+
+  @media (min-width: 45em){
+    &[data-section="graphicDesign"] {
+      background-image: url('/src/assets/desktop/image-graphic-design.jpg');
+    }
+
+    &[data-section="photography"] {
+      background-image: url('/src/assets/desktop/image-photography.jpg');
+    }
+  }
+}
+
+
+.backgroundSection__heading{
+  font-family: var(--ff-secondary);
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.backgroundSection__content{
+  font-size: 0.875rem;
+  text-align: center;
+  max-width: 38ch;
+  margin-inline: auto;
+
+  @media (min-width: 45em){
+    font-size: 1rem;
+  }
+}

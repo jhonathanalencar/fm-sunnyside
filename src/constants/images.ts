@@ -15,7 +15,7 @@ import smOrange from '../assets/mobile/image-gallery-orange.jpg';
 import smSugarCubes from '../assets/mobile/image-gallery-sugar-cubes.jpg';
 import smGraphicDesign from '../assets/mobile/image-graphic-design.jpg';
 import smHeader from '../assets/mobile/image-header.jpg';
-import smphotography from '../assets/mobile/image-photography.jpg';
+import smPhotography from '../assets/mobile/image-photography.jpg';
 import smStandOut from '../assets/mobile/image-stand-out.jpg';
 import smTransform from '../assets/mobile/image-transform.jpg';
 
@@ -25,7 +25,7 @@ import lgOrange from '../assets/desktop/image-gallery-orange.jpg';
 import lgSugarCubes from '../assets/desktop/image-gallery-sugar-cubes.jpg';
 import lgGraphicDesign from '../assets/desktop/image-graphic-design.jpg';
 import lgHeader from '../assets/desktop/image-header.jpg';
-import lgphotography from '../assets/desktop/image-photography.jpg';
+import lgPhotography from '../assets/desktop/image-photography.jpg';
 import lgStandOut from '../assets/desktop/image-stand-out.jpg';
 import lgTransform from '../assets/desktop/image-transform.jpg';
 
@@ -46,7 +46,7 @@ export default {
   smSugarCubes,
   smGraphicDesign,
   smHeader,
-  smphotography,
+  smPhotography,
   smStandOut,
   smTransform,
   lgCone,
@@ -55,7 +55,7 @@ export default {
   lgSugarCubes,
   lgGraphicDesign,
   lgHeader,
-  lgphotography,
+  lgPhotography,
   lgStandOut,
   lgTransform,
 };

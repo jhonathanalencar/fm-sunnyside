@@ -1,5 +1,5 @@
-import { InfoSection } from "../../components/InfoSection";
-import { aboutSections } from "../../constants/data";
+import { InfoSection } from "../../components";
+import { aboutSections } from "../../constants";
 
 export function About(){
   return(
