@@ -67,6 +67,30 @@ const servicesSections = [
     content: 'Increase your credibility by getting the most stunning, high-quality photos that improve your business image.',
 
   },
-]
+];
 
-export { links, aboutSections, servicesSections };
+const testimonials = [
+  {
+    id: '1',
+    name: 'Emily R.',
+    avatar: images.emily,
+    quote: 'We put our trust in Sunnyside and they delivered, making sure out needs were met and deadlines were always hit.',
+    occupation: 'Marketing Director',
+  },
+  {
+    id: '2',
+    name: 'Thomas S.',
+    avatar: images.thomas,
+    quote: "Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.",
+    occupation: 'Chief Operating Officer',
+  },
+  {
+    id: '3',
+    name: 'Jennie F.',
+    avatar: images.jennie,
+    quote: 'Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!',
+    occupation: 'Business Owner',
+  },
+];
+
+export { links, aboutSections, servicesSections, testimonials };

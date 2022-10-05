@@ -1,0 +1,44 @@
+.testimonial{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testimonial__avatar{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial__quoteContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  p{
+    text-align: center;
+    font-size: 1rem;
+    max-width: 33ch;
+    color: var(--clr-neutral-gray-400);
+  }
+  
+  cite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+
+    strong{
+      font-family: var(--ff-secondary);
+      font-weight: 900;
+    }
+
+    span{
+      font-size: 0.875rem;
+      color: var(--clr-neutral-gray-200)
+    }
+  }
+}
