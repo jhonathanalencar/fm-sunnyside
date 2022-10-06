@@ -3,7 +3,7 @@ import images from './images';
 import { aboutSections } from './data';
 import { servicesSections } from './data';
 import { testimonials } from './data';
-
+import { projects } from './data';
 
 export { 
   links, 
@@ -11,4 +11,5 @@ export {
   aboutSections,
   servicesSections, 
   testimonials,
+  projects,
 };

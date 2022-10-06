@@ -93,4 +93,37 @@ const testimonials = [
   },
 ];
 
-export { links, aboutSections, servicesSections, testimonials };
+const projects = [
+  {
+    id: '1',
+    smallScreenImage: images.smMilkBottles,
+    largeScreenImage: images.lgMilkBottles,
+    alt: 'Milk bottles',
+  },
+  {
+    id: '2',
+    smallScreenImage: images.smOrange,
+    largeScreenImage: images.lgOrange,
+    alt: 'Orange',
+  },
+  {
+    id: '3',
+    smallScreenImage: images.smCone,
+    largeScreenImage: images.lgCone,
+    alt: 'Cone',
+  },
+  {
+    id: '4',
+    smallScreenImage: images.smSugarCubes,
+    largeScreenImage: images.lgSugarCubes,
+    alt: 'Sugar cubes',
+  },
+];
+
+export { 
+  links, 
+  aboutSections, 
+  servicesSections, 
+  testimonials,
+  projects,
+};

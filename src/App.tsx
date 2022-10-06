@@ -1,5 +1,5 @@
 import { Header } from "./components";
-import { About, Hero, Services, Testimonials } from "./containers";
+import { About, Hero, Services, Testimonials, Projects } from "./containers";
 
 export function App() {
   return (
@@ -10,12 +10,7 @@ export function App() {
         <About />
         <Services />
         <Testimonials />
-        <div className="projects">
-          <img src="" alt="project" />
-          <img src="" alt="project" />
-          <img src="" alt="project" />
-          <img src="" alt="project" />
-        </div>
+        <Projects />
       </main>
       <footer>
         <strong>sunnyside</strong>
