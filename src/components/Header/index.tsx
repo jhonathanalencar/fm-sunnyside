@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { links, images } from '../../constants'
+import { Logo } from '../Logo';
 
 import styles from './styles.module.scss';
 
@@ -9,7 +10,7 @@ export function Header(){
   return(
     <div className="container">
       <header className={`container ${styles.header}`}>
-        <img src={images.logo} alt="Sunnyside" />
+        <Logo color="#fff" />
         <nav 
           id="primary-navigation"
           className={styles.header__nav}

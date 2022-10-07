@@ -8,6 +8,7 @@ import twitter from '../assets/icon-twitter.svg';
 import emily from '../assets/image-emily.jpg';
 import jennie from '../assets/image-jennie.jpg';
 import thomas from '../assets/image-thomas.jpg';
+import socialLinks from '../assets/social-icons.svg';
 
 import smCone from '../assets/mobile/image-gallery-cone.jpg';
 import smMilkBottles from '../assets/mobile/image-gallery-milkbottles.jpg';
@@ -58,4 +59,5 @@ export default {
   lgPhotography,
   lgStandOut,
   lgTransform,
+  socialLinks,
 };
