@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 export function Services(){
   return(
-    <div className={styles.services}>
+    <div id="services" className={styles.services}>
       {servicesSections.map((section) =>{
         return(
           <BackgroundSection 

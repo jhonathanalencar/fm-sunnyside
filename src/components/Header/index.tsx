@@ -23,7 +23,7 @@ export function Header(){
                   key={link.id}
                   data-type={link.type} 
                 >
-                  <a href={`#${link.id}`}>
+                  <a href={`#${link.id}`} onClick={() => setIsNavOpen(false)}>
                     {link.text}
                   </a>
                 </li>

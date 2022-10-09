@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 
 export function Projects(){
   return(
-    <div className={styles.projects}>
+    <div id="projects" className={styles.projects}>
       {projects.map((project) =>{
         return(
           <img 

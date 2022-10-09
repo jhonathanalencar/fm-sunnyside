@@ -11,13 +11,13 @@ export function Footer(){
         <nav>
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
           </ul>
         </nav>

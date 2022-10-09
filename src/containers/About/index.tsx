@@ -3,7 +3,7 @@ import { aboutSections } from "../../constants";
 
 export function About(){
   return(
-    <div className="about">
+    <div id="about" className="about">
       {aboutSections.map((section) => {
         return(
           <InfoSection 
